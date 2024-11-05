@@ -3,38 +3,24 @@
 <head>
     <title>PRACTICAS CSS- DEGRADADOS</title>
     <link rel="shortcut icon" href="88.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
     <style>
-        body {
-            text-align: center;
-        }
-
-        a {
-            margin-right: 20px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        .menu-bar {
+        body .menu-bar {
             background-color: #328859;
             padding: 15px 0;
         }
-         .menu :hover {
+        
+        .menu :hover {
             background-color: rgb(73, 243, 87);
         }
-
+        
         .menu {
             display: flex;
             justify-content: space-between;
             max-width: 10000px;
             margin: 0 auto;
         }
-
+        
         a {
             padding: 0 30px;
             text-decoration: none;
@@ -45,6 +31,22 @@
             font-size: 15px;
             font-weight: bold;
         }
+        
+        #deg1 {
+            height: 500px;
+            background-image: linear-gradient(purple, rgb(239, 206, 255));
+        }
+        
+        #deg2 {
+            height: 200px;
+            background-image: linear-gradient(rgb(141, 255, 65), rgb(227, 243, 191));
+        }
+        
+        @font-face {
+            font-family: 'Instagram';
+            src: url('instagram.ttf') format('truetype');
+            font-style: normal;
+        }
     </style>
 </head>
 
@@ -53,7 +55,7 @@
     <!-- menu -->
     <div class="menu-bar">
         <div class="menu">
-            
+
             <a href="inicio.html">Inicio</a>
             <a href="practicas.html">Practicas</a>
             <a href="textos.html">Textos</a>
@@ -61,10 +63,18 @@
             <a href="fondos.html">Fondos</a>
             <a href="degradados.html">Degradados</a>
             <a href="animaciones.html">Animaciones</a>
+            <a href="flex.html">Flex</a>
+            <a href="formulario.html">Formulario</a>
         </div>
     </div>
+    <h2>DEGRADADOS</h2>
+    <br>
+    <div id="deg1"></div>
     <br><br>
-<h2>DEGRADADOS</h2>
-<br><br>
+    <div id="deg2">
+    </div> <br><br>
+    <div id="deg3"><img src="instagram-white-icon (1).webp" alt="" width="10%" style="margin: right 20px;"> Instagram
+    </div>
 </body>
+
 </html>

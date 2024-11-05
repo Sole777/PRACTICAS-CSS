@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>PRACTICAS CSS- TEXTOS</title>
+    <link rel="shortcut icon" href="66.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        a {
+            margin-right: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .menu-bar {
+            background-color: #328859;
+            padding: 15px 0;
+        }
+        
+        .menu :hover {
+            background-color: rgb(73, 243, 87);
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            max-width: 10000px;
+            margin: 0 auto;
+        }
+        
+        a {
+            padding: 0 30px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+    
+    <script>
+        function enviarInformacion() {
+            // Obtener los valores de los campos de texto
+            var nombre = document.querySelector('input[name="nombre"]').value;
+            var edad = document.querySelector('input[name="edad"]').value;
+            var correo = document.querySelector('input[name="correo"]').value;
+            console.log("Nombre:", nombre);
+            console.log("Edad:", edad);
+            console.log("Correo:", correo);
+        }
+        function borrarCampos() {
+            // Obtener todos los inputs con la clase "caja_de_texto"
+            var campos = document.querySelectorAll('.caja_de_texto');
+            // Recorrer cada input y establecer su valor a una cadena vacía
+            campos.forEach(function(campo) {
+                campo.value = '';
+            });
+        }
+    </script>
+<body>
+    <h1>PRACTICAS CSS</h1>
+    <!-- menu -->
+    <div class="menu-bar">
+        <div class="menu">
+
+            <a href="inicio.html">Inicio</a>
+            <a href="practicas.html">Practicas</a>
+            <a href="textos.html">Textos</a>
+            <a href="imagenes.html">Imagenes</a>
+            <a href="fondos.html">Fondos</a>
+            <a href="degradados.html">Degradados</a>
+            <a href="animaciones.html">Animaciones</a>
+            <a href="flex.html">Flex</a>
+            <a href="formulario.html">Formulario</a>
+        </div>
+       
+    </div>
+    <h2>FORMULARIO</h2>
+        <br>
+        <table>
+            <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="" class="caja_de_texto"></td>
+            </tr>
+            <tr>
+            <td>Edad</td>
+            <td><input type="text" name="" class="caja_de_texto"></td>
+            </tr>
+            <tr>
+            <td>Correo</td>
+            <td><input type="text" name="" class="caja_de_texto"></td>
+            </tr>
+            <tr>
+            <td><button id="boton_enviar"onclick="enviarInformacion()">Enviar</button></td>
+            <td><button id="boton_borrar" onclick="borrarCampos()">Borrar</button></td>
+          
+            </tr>
+            </table>
+        </body>
+    <html>
+        
